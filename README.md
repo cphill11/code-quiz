@@ -10,8 +10,9 @@ An interactive quiz that users can take online.  The quiz saves scores (albeit n
 * Bootstrap
 
 ## Website
-
+https://cphill11.github.io/code-quiz/
 
 ## Image
+![Screenshot](/assets/images/screenshot.png)
 
 
