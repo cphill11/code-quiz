@@ -1,0 +1,44 @@
+/* set the box format to be border box for all different elements  */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+.background {
+   background-color: hsl(var(--hue-neutral), 100%, 20%);
+}
+
+
+.body header {
+    display:flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 2px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 7px;
+    background-color: hsl(var(--hue), 100%, 50%);
+    padding: 5px 10 px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+    border-radius: 15px;
+    color: black;
+}
+
+.hide {
+    display: none;
+}

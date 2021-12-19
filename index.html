@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <title>Coding Quiz</title>
+</head>
+
+<body>
+    <header>
+        <div class="container" class="w-100">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light">
+                    <button type="button" class="btn btn-info" id="submitScore">View High Scores</button>
+                </div>
+                        
+            <div class="row mx-lg-n5">  
+                <div class="col py-3 px-lg-5 border bg-light">
+                    <div class="btn btn-info" id="demo">Time Remaining: </div>
+                </div>
+            </div>    
+    </header>
+
+    <div class="min vh-100 d-flex align-items-center bg background">
+      <section class="row w-100 justify-content-center">      
+        <div class="col-10 col-md-6 col-lg-5">
+  
+        <!-- Quiz Main Heading -->
+        <h1 class="display-3 text-center text-white">Coding Quiz Challenge</h1>            
+        <form class="bg-white rounded my-4 p-4">
+          
+            <div id="result-container" class="hide">Quiz Done!</div>
+            <div id="question-container" class="hide">             
+              <h3 id="quiz-question">Select 'Start' to Begin Quiz</h3>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" id="a">A</button>
+                    <label id="choiceA"></label>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" id="b">B</button>
+                    <label id="choiceB"></label>
+                </div>
+                <div class="form-group">
+                  <button type="button" class="btn btn-primary" id="c">C</button>
+                  <label id="choiceC"></label>
+                </div>    
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" id="d">D</button>
+                    <label id="choiceD"></label>
+                </div>                       
+            </div>
+            <div class="form-group" id="form-btn-group">
+              <div class="form-check">
+                <h3>Select 'Start' to Begin Quiz</h3>
+                <button type="button" class="start-btn btn-success" id="startQuizButton">Start</button>
+                <input type="text" id="initials" onfocus="this.value=''" value="Player Initials"/>
+                <button type="button" class="next-btn btn-info hide" id="startpage">Next</button>
+              </div>
+            </div>
+        </form>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+  </html>
